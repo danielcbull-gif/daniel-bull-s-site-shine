@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom warm palette tokens
+        "warm-cream": "hsl(var(--warm-cream))",
+        "olive-light": "hsl(var(--olive-light))",
+        terracotta: "hsl(var(--terracotta))",
+        sage: "hsl(var(--sage))",
+        "earth-brown": "hsl(var(--earth-brown))",
       },
       borderRadius: {
         lg: "var(--radius)",
