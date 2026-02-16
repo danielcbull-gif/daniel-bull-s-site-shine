@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logoDaniel from "@/assets/logo-daniel.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,9 +53,9 @@ const Header = () => {
           <a 
             href="#" 
             onClick={(e) => { e.preventDefault(); scrollToSection("#"); }}
-            className="font-display text-xl md:text-2xl font-semibold text-foreground"
+            className="flex items-center gap-2"
           >
-            Daniel Bull
+            <img src={logoDaniel} alt="Daniel Bull - Psicanálise" className="h-12" />
           </a>
 
           <nav className="hidden lg:flex items-center gap-6">

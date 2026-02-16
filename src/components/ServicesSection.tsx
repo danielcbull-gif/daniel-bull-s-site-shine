@@ -53,8 +53,8 @@ const ServicesSection = () => {
   const modalidades = [
     {
       title: "Atendimento Presencial",
-      description: "Sessões em consultório em Campinas/SP, em um ambiente preparado para acolher você com conforto e privacidade.",
-      highlight: "Campinas/SP",
+      description: "Sessões em consultório na R. Pedro de Toledo, 665 - Sala 16, Indaiatuba/SP, em um ambiente preparado para acolher você com conforto e privacidade.",
+      highlight: "Indaiatuba/SP",
     },
     {
       title: "Atendimento Online",

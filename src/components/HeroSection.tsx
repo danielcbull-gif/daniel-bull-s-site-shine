@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowDown } from "lucide-react";
+import fotoDaniel from "@/assets/foto-daniel.jpeg";
 
 const HeroSection = () => {
   const whatsappNumber = "5519991184111";
@@ -56,7 +57,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl transform scale-110" />
               <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-secondary shadow-2xl">
                 <img 
-                  src="https://danielbullpsicanalista.com.br/images/foto.webp" 
+                  src={fotoDaniel}
                   alt="Daniel Bull - Psicanalista"
                   className="w-full h-full object-cover"
                 />

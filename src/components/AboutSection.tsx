@@ -50,7 +50,7 @@ const AboutSection = () => {
                 de um trabalho profundo e honesto consigo mesmo.
               </p>
               <p>
-                Realizo atendimentos presenciais em Campinas/SP e sessões online 
+                Realizo atendimentos presenciais em Indaiatuba/SP e sessões online 
                 para qualquer lugar do Brasil, oferecendo a mesma qualidade de 
                 presença e acolhimento em ambos os formatos.
               </p>
