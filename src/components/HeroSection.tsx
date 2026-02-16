@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, ArrowDown } from "lucide-react";
 
 const HeroSection = () => {
   const whatsappNumber = "5519991184111";
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma consulta.");
+  const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre o atendimento.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -16,12 +16,16 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text content */}
           <div className="text-center md:text-left order-2 md:order-1 animate-fade-in">
+            <p className="text-primary font-medium text-sm uppercase tracking-wider mb-4">
+              Psicanalista Daniel Bull
+            </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-tight mb-6">
-              Encontre o equilíbrio que você merece
+              Nem tudo que dói precisa ser evitado. Às vezes, precisa ser compreendido.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
-              A psicanálise oferece um espaço seguro para você se reconectar consigo mesmo, 
-              compreender suas emoções e construir uma vida mais plena e significativa.
+              A psicanálise é um convite para olhar para dentro — com honestidade, 
+              profundidade e no seu tempo. Um espaço onde sua história é escutada 
+              com respeito e seriedade.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button 
@@ -31,7 +35,7 @@ const HeroSection = () => {
               >
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="mr-2 h-5 w-5" />
-                  Agendar Consulta
+                  Agendar uma Conversa
                 </a>
               </Button>
               <Button 
@@ -40,12 +44,13 @@ const HeroSection = () => {
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium text-lg px-8 py-6 rounded-full transition-all duration-300"
                 onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Saiba Mais
+                <ArrowDown className="mr-2 h-5 w-5" />
+                Conheça meu Trabalho
               </Button>
             </div>
           </div>
 
-          {/* Photo placeholder */}
+          {/* Photo */}
           <div className="order-1 md:order-2 flex justify-center animate-fade-in">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl transform scale-110" />
@@ -56,7 +61,6 @@ const HeroSection = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Decorative badge */}
               <div className="absolute -bottom-4 -right-4 bg-card px-6 py-3 rounded-full shadow-lg border border-border">
                 <p className="text-sm font-medium text-foreground">Psicanalista</p>
               </div>
