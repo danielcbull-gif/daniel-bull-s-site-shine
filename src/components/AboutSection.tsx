@@ -1,26 +1,26 @@
-import { Award, BookOpen, Heart, Users } from "lucide-react";
+import { Ear, ShieldCheck, Clock, Compass } from "lucide-react";
 
 const AboutSection = () => {
-  const highlights = [
+  const pilares = [
     {
-      icon: BookOpen,
-      title: "Formação Sólida",
-      description: "Especialização em Psicanálise com abordagem humanizada",
+      icon: Ear,
+      title: "Escuta Profunda",
+      description: "Um espaço onde cada palavra sua é acolhida sem julgamento, com atenção ao que é dito — e ao que ainda não encontrou palavras.",
     },
     {
-      icon: Heart,
-      title: "Acolhimento",
-      description: "Escuta empática e ambiente seguro para sua jornada",
+      icon: Clock,
+      title: "Respeito ao Tempo",
+      description: "Cada pessoa tem seu próprio ritmo. Aqui, não há pressa nem fórmulas prontas — há presença e compromisso com o seu processo.",
     },
     {
-      icon: Users,
-      title: "Experiência",
-      description: "Anos de prática clínica atendendo adultos",
+      icon: Compass,
+      title: "Autonomia Emocional",
+      description: "O objetivo não é criar dependência, mas ajudar você a desenvolver recursos internos para lidar com a vida de forma mais consciente.",
     },
     {
-      icon: Award,
-      title: "Ética Profissional",
-      description: "Compromisso com o sigilo e bem-estar do paciente",
+      icon: ShieldCheck,
+      title: "Ética e Sigilo",
+      description: "Tudo o que é compartilhado em sessão permanece protegido. A confiança é a base de qualquer processo terapêutico verdadeiro.",
     },
   ];
 
@@ -38,26 +38,28 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Sou psicanalista dedicado a ajudar pessoas a encontrarem clareza 
-                em momentos de confusão emocional e a desenvolverem uma relação 
-                mais saudável consigo mesmas.
+                Sou psicanalista e o meu trabalho é ajudar pessoas a compreenderem 
+                aquilo que, muitas vezes, elas mesmas não conseguem nomear: padrões 
+                que se repetem, emoções que transbordam sem aviso, conflitos que 
+                parecem não ter saída.
               </p>
               <p>
-                Minha abordagem é baseada na escuta atenta e no acolhimento genuíno. 
-                Acredito que cada pessoa carrega em si a capacidade de transformação, 
-                e meu papel é facilitar esse processo de autodescoberta.
+                Acredito que o sofrimento humano não precisa ser silenciado — precisa 
+                ser escutado. E é nessa escuta atenta, respeitosa e comprometida que 
+                a transformação acontece. Não como promessa, mas como consequência 
+                de um trabalho profundo e honesto consigo mesmo.
               </p>
               <p>
-                Atendo presencialmente em Campinas/SP e também realizo sessões online, 
-                oferecendo flexibilidade para que você possa cuidar da sua saúde mental 
-                onde quer que esteja.
+                Realizo atendimentos presenciais em Campinas/SP e sessões online 
+                para qualquer lugar do Brasil, oferecendo a mesma qualidade de 
+                presença e acolhimento em ambos os formatos.
               </p>
             </div>
           </div>
 
-          {/* Highlights grid */}
+          {/* Pilares */}
           <div className="grid grid-cols-2 gap-6 animate-fade-in">
-            {highlights.map((item, index) => (
+            {pilares.map((item, index) => (
               <div 
                 key={index}
                 className="bg-card p-6 rounded-2xl border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"

@@ -3,24 +3,24 @@ import { Clock, MapPin, MessageCircle, Phone } from "lucide-react";
 
 const ContactSection = () => {
   const whatsappNumber = "5519991184111";
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma consulta.");
+  const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre o atendimento.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   const steps = [
     {
       number: "1",
       title: "Entre em Contato",
-      description: "Envie uma mensagem pelo WhatsApp para iniciarmos nossa conversa.",
+      description: "Envie uma mensagem pelo WhatsApp. Sem compromisso, sem pressão — apenas uma conversa inicial.",
     },
     {
       number: "2",
-      title: "Agende sua Sessão",
-      description: "Escolhemos juntos o melhor horário para sua primeira consulta.",
+      title: "Primeira Conversa",
+      description: "Agendamos um momento para entender o que você busca e como a psicanálise pode fazer sentido no seu caminho.",
     },
     {
       number: "3",
-      title: "Inicie sua Jornada",
-      description: "Comece seu processo de autoconhecimento e transformação pessoal.",
+      title: "Início do Processo",
+      description: "Começamos juntos. No seu ritmo, no seu tempo, com a profundidade que o seu processo pedir.",
     },
   ];
 
@@ -33,12 +33,12 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: "Atendimento",
-      value: "Campinas/SP e Online",
+      value: "Campinas/SP e Online (todo o Brasil)",
     },
     {
       icon: Clock,
       label: "Horários",
-      value: "Seg a Sex • Horários flexíveis",
+      value: "Segunda a Sexta • Horários flexíveis",
     },
   ];
 
@@ -48,14 +48,15 @@ const ContactSection = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-medium text-sm uppercase tracking-wider mb-4 block">
-            Contato
+            Agendamento
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
-            Pronto para Começar?
+            O Primeiro Passo é Seu
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            O primeiro passo é sempre o mais importante. 
-            Entre em contato e agende sua consulta.
+            Dar início a um processo de autoconhecimento exige coragem. 
+            Se você chegou até aqui, talvez algo dentro de você já esteja 
+            pedindo esse espaço.
           </p>
         </div>
 
@@ -72,9 +73,6 @@ const ContactSection = () => {
               <p className="text-muted-foreground">
                 {step.description}
               </p>
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-border -translate-y-1/2" />
-              )}
             </div>
           ))}
         </div>
@@ -87,6 +85,10 @@ const ContactSection = () => {
               <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
                 Informações de Contato
               </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Estou disponível para esclarecer dúvidas e agendar sua primeira sessão. 
+                A conversa é simples, direta e sem compromisso.
+              </p>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center gap-4">
@@ -106,10 +108,11 @@ const ContactSection = () => {
             <div className="bg-primary rounded-2xl p-8 text-center">
               <MessageCircle className="w-16 h-16 text-primary-foreground/80 mx-auto mb-4" />
               <h4 className="font-display text-2xl font-semibold text-primary-foreground mb-3">
-                Agende sua Consulta
+                Vamos Conversar?
               </h4>
               <p className="text-primary-foreground/80 mb-6">
-                Clique no botão abaixo para iniciar uma conversa pelo WhatsApp
+                Você não precisa ter certeza de nada para dar o primeiro passo. 
+                Basta sentir que é hora de se escutar.
               </p>
               <Button 
                 asChild

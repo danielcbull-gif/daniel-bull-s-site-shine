@@ -7,7 +7,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const whatsappNumber = "5519991184111";
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma consulta.");
+  const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre o atendimento.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   useEffect(() => {
@@ -21,7 +21,9 @@ const Header = () => {
   const navLinks = [
     { label: "Início", href: "#" },
     { label: "Sobre", href: "#sobre" },
-    { label: "Serviços", href: "#servicos" },
+    { label: "Psicanálise", href: "#como-funciona" },
+    { label: "Jornada", href: "#jornada" },
+    { label: "Canal", href: "#canal" },
     { label: "Contato", href: "#contato" },
   ];
 
@@ -47,7 +49,6 @@ const Header = () => {
     >
       <div className="container mx-auto max-w-6xl px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <a 
             href="#" 
             onClick={(e) => { e.preventDefault(); scrollToSection("#"); }}
@@ -56,14 +57,13 @@ const Header = () => {
             Daniel Bull
           </a>
 
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 onClick={(e) => { e.preventDefault(); scrollToSection(link.href); }}
-                className="text-foreground/80 hover:text-foreground transition-colors duration-200 font-medium"
+                className="text-foreground/80 hover:text-foreground transition-colors duration-200 font-medium text-sm"
               >
                 {link.label}
               </a>
@@ -79,9 +79,8 @@ const Header = () => {
             </Button>
           </nav>
 
-          {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -89,9 +88,8 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-border animate-fade-in">
+          <nav className="lg:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
