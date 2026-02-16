@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import logoDaniel from "@/assets/logo-daniel.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,9 +8,7 @@ const Footer = () => {
     <footer className="py-8 px-4 bg-card border-t border-border">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="font-display text-lg font-semibold text-foreground">
-            Daniel Bull
-          </div>
+          <img src={logoDaniel} alt="Daniel Bull - Psicanálise" className="h-10" />
           
           <p className="text-muted-foreground text-sm flex items-center gap-1">
             © {currentYear} • Feito com <Heart className="w-4 h-4 text-terracotta fill-current" /> para seu bem-estar

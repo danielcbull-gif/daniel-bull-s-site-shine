@@ -32,8 +32,8 @@ const ContactSection = () => {
     },
     {
       icon: MapPin,
-      label: "Atendimento",
-      value: "Campinas/SP e Online (todo o Brasil)",
+      label: "Consultório",
+      value: "R. Pedro de Toledo, 665 - Sala 16, Indaiatuba/SP",
     },
     {
       icon: Clock,
